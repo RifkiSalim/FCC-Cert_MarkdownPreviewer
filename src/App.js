@@ -40,6 +40,7 @@ function App() {
   const previewHtml = marked(mdInput);
 
   return (
+    // Base Container
     <div
       className="container-fluid"
       style={{
@@ -50,15 +51,16 @@ function App() {
         backgroundPosition: "center",
       }}
     >
+      {/* Wrapper */}
       <div className="">
         <div className="row p-2">
+          {/* Column #1 Editor */}
           <div
             className="col-lg-6 col-sm-12 text-white p-2"
             style={{
               height: "95dvh",
             }}
           >
-            {/* Container */}
             <div
               className="container w-100 bg-glass border rounded border-white border-opacity-25 rounded-3 p-0"
               style={{
@@ -71,7 +73,6 @@ function App() {
                   <span className="fw-bold fs-6">MARKDOWN EDITOR</span>
                 </div>
               </div>
-              {/* Parent */}
               <div
                 className="container p-1"
                 style={{ height: "calc(100% - 41px)" }}
@@ -89,13 +90,14 @@ function App() {
               </div>
             </div>
           </div>
+
+          {/* Column #2 Preview */}
           <div
             className="col-lg-6 col-sm-12 text-white p-2"
             style={{
               height: "95dvh",
             }}
           >
-            {/* Container */}
             <div
               className="container w-100 bg-glass border rounded border-white border-opacity-25 rounded-3 p-0"
               style={{
@@ -120,6 +122,7 @@ function App() {
             </div>
           </div>
         </div>
+        {/* Copyright */}
         <div className="d-flex text-center justify-content-center">
           <span className="text-white text-opacity-75">
             Design and Code by{" "}

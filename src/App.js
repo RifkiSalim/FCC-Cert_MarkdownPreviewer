@@ -1,9 +1,18 @@
+// React Imports
 import React, { useEffect, useState } from "react";
-import CirclesBG from "./assets/bg-circles.svg";
+
+// External Libraries
+import { marked } from "marked";
+import DOMPurify from "dompurify";
+
+// Icons
 import { FaPencilAlt } from "react-icons/fa";
 import { MdPreview } from "react-icons/md";
-import DOMPurify from "dompurify";
-import { marked } from "marked";
+
+// Background
+import CirclesBG from "./assets/bg-circles.svg";
+
+// Default Text
 const defaultText = `
 # Heading 1
 
@@ -30,13 +39,16 @@ function greet(name) {
 **Bold Text**
 `;
 
-function App() {
+const App = () => {
+  // States
   const [mdInput, setMdInput] = useState(defaultText);
 
+  // Init marked.js
   useEffect(() => {
     marked.setOptions({ breaks: true, gfm: true });
   }, []);
 
+  // Auto parse markdown state
   const previewHtml = marked(mdInput);
 
   return (
@@ -139,6 +151,6 @@ function App() {
       </div>
     </div>
   );
-}
+};
 
 export default App;

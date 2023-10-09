@@ -1,0 +1,35 @@
+// Colors
+// $primary: #00f260;
+// $secondary: #0575e6;
+// $success: #28a745;
+// $info: #17a2b8;
+// $warning: #ffc107;
+// $danger: #dc3545;
+// $light: #f8f9fa;
+// $dark: #343a40;
+
+.bg-glass {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+}
+
+.bg-glass-textarea {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  color: rgba(255, 255, 255, 0.9); /* Adjust the opacity as needed */
+}
+
+.bg-glass-textarea:focus {
+  outline: none;
+}
+
+/* CSS */
+.line-break {
+  white-space: pre-wrap;
+}
+
+@import "../../node_modules/bootstrap/scss/bootstrap";

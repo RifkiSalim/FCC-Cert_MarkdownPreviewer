@@ -137,7 +137,7 @@ const App = () => {
         {/* Copyright */}
         <div className="d-flex text-center justify-content-center">
           <span className="text-white text-opacity-75">
-            Design and Code by{" "}
+            Designed and Coded by{" "}
             <a
               href="http://rifkisalim.com"
               target="_blank"

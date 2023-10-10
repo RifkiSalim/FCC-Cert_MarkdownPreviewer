@@ -4,13 +4,6 @@
 
 This project is part of my entries to the FreeCodeCamp Front End Development Libraries Certification. It is a simple but elegant Markdown Previewer designed with a glassmorphic user interface.
 
-### Features
-
-- Input Markdown text in the left pane and see the live styled preview in the right pane.
-- The application uses Marked.js to parse Markdown into HTML for rendering.
-- Output HTML is sanitized using DOMPurify to ensure security.
-- Stylish glassmorphic UI design for a modern and visually appealing experience.
-
 ### Stack
 
 - **Frontend Framework:** React
@@ -18,7 +11,14 @@ This project is part of my entries to the FreeCodeCamp Front End Development Lib
 - **HTML Sanitization:** DOMPurify
 - **Styling:** Bootstrap
 
-### Usage
+## Features
+
+- Input Markdown text in the left pane and see the live styled preview in the right pane.
+- The application uses Marked.js to parse Markdown into HTML for rendering.
+- Output HTML is sanitized using DOMPurify to ensure security.
+- Stylish glassmorphic UI design for a modern and visually appealing experience.
+
+## Usage
 
 To use this Markdown Previewer:
 
@@ -45,13 +45,6 @@ To use this Markdown Previewer:
 5. Open your web browser and access the development server's URL (usually http://localhost:3000) to view and use the Markdown Previewer.
 
 6. Enter Markdown text in the left pane, and the live preview will appear in the right pane.
-
-### Dependencies
-
-- React
-- Marked.js
-- DOMPurify
-- Bootstrap
 
 ### License
 
